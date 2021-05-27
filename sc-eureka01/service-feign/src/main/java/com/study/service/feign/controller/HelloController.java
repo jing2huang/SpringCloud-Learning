@@ -14,8 +14,8 @@ public class HelloController {
     SchedualServiceHello serviceHello;
 
     @GetMapping(value = "/hello")
-    public String sayHi(@RequestParam String name) {
-        return serviceHello.sayHiFromClientOne( name );
+    public String sayHello(@RequestParam String name) {
+        return serviceHello.sayHelloFromClientOne( name );
     }
 
 }
