@@ -26,3 +26,10 @@ spring:
             - Path=/consumer/**
           filters:
             - StripPrefix=1
+    sentinel:
+      transport:
+        port: 15000
+        dashboard: localhost:8748
+
+  main:
+    allow-bean-definition-overriding: true
